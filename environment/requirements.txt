@@ -1,0 +1,7 @@
+# pip fallback (study environment versions). Prefer conda for RDKit parity.
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.6.1
+torch==2.4.1
+# RDKit: install via conda (rdkit=2024.09.6). rdkit-pypi wheels may differ in
+# descriptor count and break the 'rdkit' feature block — see docs/reproducibility.md.

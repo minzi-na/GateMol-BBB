@@ -1,0 +1,26 @@
+# --- Model weights & large binaries (distributed via Zenodo) ---
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.npz
+*.db
+artifacts/
+features/*.npz
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+
+# --- Experiment logs / scratch ---
+wandb/
+*.log
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/

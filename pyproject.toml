@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gatemol-bbb"
+version = "0.1.0"
+description = "Adaptive multimodal integration for blood-brain barrier permeability prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26,<2",
+    "pandas>=2.2",
+    "scikit-learn>=1.6",
+    "torch>=2.4",
+    # RDKit is version-sensitive (2024.9.6 -> 217 descriptors); install via conda.
+    # See environment/environment.yml and docs/reproducibility.md.
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

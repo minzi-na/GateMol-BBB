@@ -1,0 +1,19 @@
+name: gatemol-bbb
+# Versions pinned to the study environment (conda rapids-25.02).
+# RDKit 2024.09.6 is reproducibility-critical: it yields exactly 217 RDKit
+# descriptors. A different RDKit version changes that count and misaligns the
+# 'rdkit' feature block. See docs/reproducibility.md.
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.16
+  - rdkit=2024.09.6
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - scikit-learn=1.6.1
+  - pytorch=2.4.1
+  - pip
+  - pip:
+      - -e ..
+# NOTE: SCAGE (env 'scage_new') and MolE (pyenv 'mole') run in their own
+# environments for embedding extraction — see src/gatemol_bbb/features/README.md.
