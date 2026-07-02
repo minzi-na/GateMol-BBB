@@ -5,6 +5,13 @@ prediction. GateMol-BBB is a gMLP-based model that fuses molecular fingerprints,
 RDKit descriptors, and pretrained graph encoders (SCAGE, MolE) through a gated
 mixing pooler discovered by an AutoResearch architecture search.
 
+![GateMol-BBB architecture](docs/figures/architecture.png)
+
+Each modality is projected to `d_model`, stacked into `N_mod` tokens, mixed by a
+gMLP backbone with a Spatial Gating Unit, gated-pooled to a single vector, and
+classified as BBB+ / BBB−. The per-modality input dimensions above match
+`gatemol_bbb.features` exactly (RDKit 2024.9.6 → 217 descriptors).
+
 This repository releases the two final models from the study:
 
 | Protocol | Feature combination | Training data | Evaluation | Final architecture |

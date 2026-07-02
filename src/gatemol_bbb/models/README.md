@@ -10,4 +10,6 @@ reimplemented cleanly in `gatemol_bbb.train`).
 | `protocol2_gmlp.py` | II | `2e8cbdc` (`train.py`) | iter198 single-head attn-biased pool (Phase-2 did not beat it) |
 
 Scope: final models only. Intermediate architecture-search milestones are not
-part of this release.
+part of this release. The figure below traces how each final model was reached:
+
+![AutoResearch architecture evolution](../../../docs/figures/autoresearch_evolution.png)
