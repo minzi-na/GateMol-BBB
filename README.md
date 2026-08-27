@@ -51,7 +51,18 @@ environment exactly as in `environment/environment.yml`. See `docs/reproducibili
 
 ## Citation
 
-> _TODO: add paper / Zenodo citation once available._
+The weights and evaluation records are archived on Zenodo:
+
+> Kim, M. *GateMol-BBB: trained model weights and evaluation records for gated
+> multi-modal blood–brain barrier permeability prediction* (v1.0.0) [Data set].
+> Zenodo. https://doi.org/10.5281/zenodo.22119636
+
+Cite the all-versions DOI above (`10.5281/zenodo.22119636`) rather than the
+v1.0.0 DOI (`10.5281/zenodo.22119637`) unless you mean that specific version.
+The deposit is pending publication; the DOIs resolve once it is released.
+
+> _TODO: add the manuscript citation once available, and record it on the Zenodo
+> deposit as an `isSupplementTo` related identifier._
 
 ## License
 
