@@ -55,7 +55,7 @@ The weights and evaluation records are archived on Zenodo:
 
 > Kim, M. *GateMol-BBB: trained model weights and evaluation records for gated
 > multi-modal blood–brain barrier permeability prediction* (v1.0.0) [Data set].
-> Zenodo. https://doi.org/10.5281/zenodo.22119636
+> Zenodo. https://doi.org/10.5281/zenodo.22119637
 
 Cite the all-versions DOI above (`10.5281/zenodo.22119636`) rather than the
 v1.0.0 DOI (`10.5281/zenodo.22119637`) unless you mean that specific version.
